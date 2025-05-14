@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quán Cơm nêu tuy hòa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-image: url('nền.jpg');
+            background-color: #c0392b;
+            color:red;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #e67e22;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #d35400;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .intro, .contact {
+            text-align: center;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .dish {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .dish img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .dish h3, .dish p {
+            padding: 10px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .google-form-btn {
+            background-color: #27ae60;
+        }
+        .zalo-btn {
+            background-color: #0084ff;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍚 Quán Cơm nêu tuy hòa</h1>
+    <p>Ngon miệng - Giá bình dân - Giao tận nơi</p>
+</header>
+
+<nav>
+    <a href="trang chủ.html">trang chủ</a>
+    <a href="giới thiệu.html">Giới thiệu</a>
+    <a href="thưc đơn.html">Thực đơn</a>
+    <a href="giỏ hàng.html">Giỏ hàng</a>
+    <a href="liên hệ.html">Liên hệ</a>
+    <a href="đánh giá.html">Đánh giá</a>
+</nav>
+
+<section id="gioithieu" class="intro">
+    <h2>Về chúng tôi</h2>
+    <p>Chúng tôi phục vụ những bữa cơm ngon, như mẹ nấu. Nguyên liệu tươi, sạch, giá cả phải chăng, phục vụ tận tình cho nhân viên văn phòng, sinh viên và người lao động.</p>
+</section>
+
+<section id="menu">
+    <h2 style="text-align:center;">Thực đơn nổi bật</h2>
+    <div class="menu-grid">
+        <div class="dish">
+            <img src="cơm sườn" alt="Cơm sườn">
+            <h3>Cơm sườn nướng</h3>
+            <p>35.000đ</p>
+        </div>
+        <div class="dish">
+            <img src="gà sối mỡ" alt="Cơm gà xối mỡ">
+            <h3>Cơm gà xối mỡ</h3>
+            <p>40.000đ</p>
+        </div>
+        <div class="dish">
+            <img src="gà xé" alt="Cơm gà xé">
+            <h3>Cơm chay gà xé</h3>
+            <p>30.000đ</p>
+        </div>
+    </div>
+</section>
+
+<section id="lienhe" class="contact">
+    <h2>Liên hệ & Đặt món</h2>
+    <p>📞 Gọi: <a href="tel:0392249100">0392 249 100</a></p>
+    <p>🏠 Địa chỉ: 244 nguyễn huệ, tp. tuy hòa, phú yên</p>
+
+    <div class="buttons">
+        <a href="https://zalo.me/0392249100" class="zalo-btn" target="_blank">💬 Đặt món qua Zalo</a>
+    </div>
+
+    <h3>📍 Xem bản đồ</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0515961324463!2d109.3177585!3d13.095916599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316fec46338fa8f1%3A0xa697d1ba08fc9817!2zMjQ0IE5ndXnhu4VuIEh14buHLCBQaMaw4budbmc3LCBUdXkgSMOyYSwgUGjDuiBZw6pu!5e0!3m2!1svi!2s!4v1747146865327!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </iframe>
+</section>
+
+<footer>
+    <p>© 2025 Quán Cơm nêu tuy hòa | ngon không gì chê</p>
+</footer>
+<!-- Nút Zalo nổi -->
+<a href="https://zalo.me/0392249100" target="_blank" id="zalo-chat">
+    <img src="zalo.png" alt="Chat Zalo">
+  </a>
+  
+  <style>
+  #zalo-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  #zalo-chat img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  </style>
+  
+</body>
+</html>
